@@ -8,5 +8,5 @@ tip_one = 10
 tip_two = 12
 tip_three = 15
 people = input("How many people will split the bill?\n")
-bill_split = total_bill / people * percentage
-print("Each person should pay:\n" + format(bill_split))
+bill_split = (int(total_bill) / int(people)) * (int(percentage))
+print("Each person should pay:\n {:0.2f}".format(bill_split))
